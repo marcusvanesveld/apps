@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sparkle feed for ViddyGrid. NOT LIVE and deliberately incomplete.
+
+  Two placeholders must be filled before this is served, and neither is an
+  agent's to fill:
+
+  1. sparkle:edSignature - produced by Sparkle's `sign_update` against the DMG,
+     using an EdDSA key that does not exist yet. Sparkle refuses unsigned feeds.
+  2. the enclosure url - the GitHub Release asset URL, which exists only once
+     the release is created.
+
+  Serving this with placeholders would make every update check fail loudly,
+  which is worse than today's state (no check fires at all).
+-->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>ViddyGrid</title>
+    <link>https://marcusvanesveld.com/appcast.xml</link>
+    <description>Updates for ViddyGrid</description>
+    <language>en</language>
+    <item>
+      <title>Version 1.0</title>
+      <pubDate>Wed, 05 Aug 2026 12:55:00 +0700</pubDate>
+      <sparkle:version>1</sparkle:version>
+      <sparkle:shortVersionString>1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="REPLACE-WITH-RELEASE-ASSET-URL/ViddyGrid-1.0.dmg"
+        length="53477376"
+        type="application/octet-stream"
+        sparkle:edSignature="REPLACE-WITH-SIGNATURE" />
+    </item>
+  </channel>
+</rss>
