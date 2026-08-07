@@ -1,2 +1,8 @@
 .DS_Store
 *.dmg
+
+# Internal agent + planning docs. This repo is PUBLIC (GitHub Pages needs it
+# public), so only files that ARE the website belong in git. CLAUDE.md and
+# README.md stay on disk for agents and are deliberately untracked.
+CLAUDE.md
+README.md
