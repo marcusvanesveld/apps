@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ViddyGrid — Privacy Policy</title>
+<meta name="description" content="ViddyGrid collects no data. It has no account, no analytics, and no networking code. Everything it does happens on your Mac.">
+<style>
+:root {
+  --ink: #16181d;
+  --ink-soft: #545a66;
+  --rule: #d9dce3;
+  --paper: #fbfbfc;
+  --panel: #ffffff;
+  --accent: #1f4fd8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8eaee; --ink-soft: #9aa2b1; --rule: #2c313a;
+    --paper: #101216; --panel: #171a20; --accent: #7ea2ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
+h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 .4rem; }
+.role { color: var(--ink-soft); margin: 0; }
+h2 {
+  font-size: .82rem; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--ink-soft); margin: 3rem 0 1rem; font-weight: 600;
+}
+p { margin: 0 0 1rem; max-width: 38rem; }
+ul { max-width: 38rem; padding-left: 1.15rem; margin: 0 0 1rem; }
+li { margin-bottom: .4rem; }
+a { color: var(--accent); }
+.lede { font-size: 1.06rem; }
+.item {
+  border: 1px solid var(--rule); background: var(--panel);
+  border-radius: 6px; padding: 1.1rem 1.25rem; margin-bottom: .85rem;
+}
+.item h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.item p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
+.meta { font-size: .82rem; color: var(--ink-soft); margin-top: .6rem; }
+.back { font-size: .9rem; }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  color: var(--ink-soft); font-size: .86rem;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>ViddyGrid — Privacy Policy</h1>
+  <p class="role">Last updated 7 August 2026</p>
+</header>
+
+<p class="lede">
+  ViddyGrid collects nothing. There is no account, no sign-in, no analytics, no crash reporting and
+  no advertising. Nothing about you, your files or your use of the app is sent anywhere, because
+  the app contains no code that could send it.
+</p>
+
+<h2>What is collected</h2>
+<p>
+  Nothing. That is the whole answer, and the rest of this page exists to say precisely what it
+  means rather than to qualify it.
+</p>
+
+<h2>What the app can reach on your Mac</h2>
+<p>
+  ViddyGrid runs in Apple's App Sandbox. It can read the folder of videos you choose and the
+  individual files you open, and nothing else. Its access to that folder is
+  <strong>read-only</strong> — it is not technically capable of writing to, renaming or deleting
+  your video files, and this is enforced by macOS rather than promised by the app.
+</p>
+
+<h2>What is stored, and where</h2>
+<p>
+  Everything ViddyGrid produces stays inside its own container on your Mac, under
+  <code>~/Library/Containers/</code>. That is:
+</p>
+<ul>
+  <li>A local index of your library — file paths, titles, durations and transcripts — in a SQLite
+      database only this app opens.</li>
+  <li>A bookmark recording which folder you chose, so the app can reopen it next time.</li>
+  <li>Interface preferences: window size, column widths, subtitle and playback settings.</li>
+</ul>
+<p>
+  None of it is transmitted, backed up to any service of mine, or readable by any other
+  application. Deleting the app removes it. There is no server-side copy, because there is no
+  server.
+</p>
+
+<h2>Transcription happens on your Mac</h2>
+<p>
+  ViddyGrid transcribes speech using Apple's on-device speech recognition, built into macOS. Your
+  audio is never uploaded, never sent to a transcription service, and never processed by anyone
+  else's computer. There is no API key involved, no cloud account, and no third-party AI service —
+  not mine and not anybody's.
+</p>
+
+<h2>The one time the network is used</h2>
+<p>
+  The first time you transcribe something, macOS may need to install its English speech model if
+  your Mac does not already have it. ViddyGrid asks the system to do that, and macOS downloads the
+  model from Apple.
+</p>
+<p>
+  This is a download, not an upload. Nothing about you, your files or your library is included in
+  it, and it is a request for a standard macOS component rather than anything specific to you. It
+  happens once. If your Mac already has the model, or has no internet connection, no request is
+  made at all.
+</p>
+<p>
+  Apart from that, the app makes no network connections of any kind. It contains no networking
+  code — no <code>URLSession</code>, no sockets — and the media decoder it ships with is built with
+  network protocol support disabled entirely, so it can read files from your disk and nothing else.
+</p>
+
+<h2>Third parties</h2>
+<p>
+  There are none. No analytics SDK, no advertising identifier, no attribution framework, no
+  embedded browser, no social login. The open-source libraries ViddyGrid includes — FFmpeg, dav1d,
+  zimg, libzvbi and GRDB — decode video and store data locally; none of them is a service and none
+  of them phones anyone. Their licence texts are shown inside the app, under
+  <strong>ViddyGrid &rsaquo; Licences</strong>.
+</p>
+
+<h2>Children</h2>
+<p>
+  ViddyGrid is rated 4+ and collects no data from anyone, of any age.
+</p>
+
+<h2>Your rights</h2>
+<p>
+  Data protection law gives you rights to access, correct, export and delete personal data held
+  about you. I hold none, so there is nothing to access or erase — and no request you could make
+  that I would be able to answer with anything other than this page. Your library index is on your
+  own disk and under your own control.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If ViddyGrid ever does something that changes this page, this page changes first and the date at
+  the top changes with it. A version that collected anything would be a different product.
+</p>
+
+<h2>Contact</h2>
+<p>
+  <a href="mailto:marcusvanesveld@gmail.com">marcusvanesveld@gmail.com</a><br>
+  Marcus van Esveld, Netherlands
+</p>
+
+<footer>
+  <p class="back"><a href="/">marcusvanesveld.com</a> &middot; <a href="/viddygrid/support/">ViddyGrid support</a></p>
+  Built in the Netherlands. No trackers, no analytics, no cookies on this page.
+</footer>
+
+</div>
+</body>
+</html>
