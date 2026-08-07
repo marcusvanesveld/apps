@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offprint — Privacy Policy</title>
+<meta name="description" content="Offprint has no account, no analytics and no server of its own. What you capture stays on your computer. The few requests it does make are listed here by name.">
+<style>
+:root {
+  --ink: #16181d;
+  --ink-soft: #545a66;
+  --rule: #d9dce3;
+  --paper: #fbfbfc;
+  --panel: #ffffff;
+  --accent: #1f4fd8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8eaee; --ink-soft: #9aa2b1; --rule: #2c313a;
+    --paper: #101216; --panel: #171a20; --accent: #7ea2ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
+h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 .4rem; }
+.role { color: var(--ink-soft); margin: 0; }
+h2 {
+  font-size: .82rem; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--ink-soft); margin: 3rem 0 1rem; font-weight: 600;
+}
+p { margin: 0 0 1rem; max-width: 38rem; }
+ul { max-width: 38rem; padding-left: 1.15rem; margin: 0 0 1rem; }
+li { margin-bottom: .5rem; }
+a { color: var(--accent); }
+.lede { font-size: 1.06rem; }
+.item {
+  border: 1px solid var(--rule); background: var(--panel);
+  border-radius: 6px; padding: 1.1rem 1.25rem; margin-bottom: .85rem;
+}
+.item h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.item p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
+.meta { font-size: .82rem; color: var(--ink-soft); margin-top: .6rem; }
+.back { font-size: .9rem; }
+code {
+  font: .88em ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--panel); border: 1px solid var(--rule);
+  border-radius: 3px; padding: .05rem .3rem;
+}
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  color: var(--ink-soft); font-size: .86rem;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Offprint — Privacy Policy</h1>
+  <p class="role">Last updated 8 August 2026</p>
+</header>
+
+<p class="lede">
+  Offprint has no account, no sign-in, no analytics and no server of its own. I never receive
+  anything you capture, and there is no code in the extension that could send it to me.
+</p>
+
+<h2>What Offprint collects about you</h2>
+<p>
+  Nothing. There is no tracking, no telemetry, no usage reporting, no crash reporting, no
+  advertising identifier, and no profile of any kind.
+</p>
+
+<h2>What stays on your computer</h2>
+<p>
+  Everything you capture: the Markdown, the transcripts, the screenshots, the offline reader
+  files, your per-site rules and your settings. They are written to your own browser storage and
+  your own downloads folder, and they stay there until you delete them.
+</p>
+
+<h2>What does leave your computer, and where it goes</h2>
+<p>
+  Offprint is not fully offline, and it would be dishonest to claim otherwise. For some sites it
+  has to ask that site for something the page itself does not contain. There are exactly three
+  cases, and no others:
+</p>
+
+<div class="item">
+  <h3>YouTube</h3>
+  <p>
+    Capturing a transcript asks YouTube for that video's caption track. The video ID goes to
+    YouTube, which already knows you are watching the video.
+  </p>
+</div>
+
+<div class="item">
+  <h3>Bilibili</h3>
+  <p>
+    Same thing for Bilibili videos: the video ID goes to Bilibili's own API to fetch the
+    subtitles.
+  </p>
+</div>
+
+<div class="item">
+  <h3>X / Twitter — a third party is involved</h3>
+  <p>
+    X blocks reading a post's text directly, so capturing one sends the account name and the post
+    ID to <strong>fxtwitter.com</strong>, an independent service I do not run and do not control,
+    which returns the post's contents. If you would rather that never happen, do not capture
+    posts on X. Nothing else in Offprint touches it.
+  </p>
+</div>
+
+<p>
+  None of these requests carry an identifier for you, and none of them reach any server of mine,
+  because I do not operate one.
+</p>
+
+<h2>The permissions Chrome asks you to grant</h2>
+<ul>
+  <li><strong>Access to the sites you visit</strong> — Offprint reads the page you are capturing.
+    It only reads a page when you ask it to, and it reads it in your browser.</li>
+  <li><strong>Downloads</strong> — to save what you captured to your downloads folder.</li>
+  <li><strong>Storage</strong> — to keep your settings and per-site rules on your machine.</li>
+  <li><strong>Tabs, context menus, notifications, alarms</strong> — the menu item, the keyboard
+    shortcut, the "saved" notification, and the list of tabs the tool shows you.</li>
+  <li><strong>Debugger</strong> — the alarming-sounding one. It is used for a single thing: a
+    full-page screenshot of the whole scroll height, which Chrome only allows through this API.
+    Offprint attaches it, takes the one shot, and detaches immediately.</li>
+  <li><strong>Native messaging</strong> — lets the optional <code>offprint</code> command-line
+    tool talk to the extension through a local socket on your own machine. Nothing about that
+    connection goes over a network.</li>
+</ul>
+
+<h2>If you buy a licence</h2>
+<p>
+  The extension is free. The optional command-line tool is paid, and payment is handled entirely
+  by <a href="https://polar.sh">Polar</a>, who act as the seller of record. Your email address and
+  payment details go to them and their payment processor, never to me — I only ever see that a
+  sale happened, and to whom it was issued. Their privacy policy governs that part.
+</p>
+<p>
+  Activating a licence sends your licence key and the name of your computer to Polar once, so it
+  can count how many machines you have used it on. The result is stored in a file on your own
+  machine and the tool never contacts the network again.
+</p>
+
+<h2>Children</h2>
+<p>
+  Offprint is a tool for reading and writing, not a service, and it is not directed at children.
+  It collects nothing from anyone, of any age.
+</p>
+
+<h2>Changes</h2>
+<p>
+  If this policy changes, the date at the top changes with it. Because Offprint collects nothing,
+  any change would be about the three outbound requests listed above, and they would be listed
+  here too.
+</p>
+
+<h2>Contact</h2>
+<p>
+  <a href="mailto:marcusvanesveld@gmail.com">marcusvanesveld@gmail.com</a>
+</p>
+
+<footer>
+  <p class="back"><a href="/">marcusvanesveld.com</a></p>
+</footer>
+
+</div>
+</body>
+</html>
