@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offprint — Support</title>
+<meta name="description" content="How to get help with Offprint: common fixes, what to include in an email, and refunds.">
+<style>
+:root {
+  --ink: #16181d;
+  --ink-soft: #545a66;
+  --rule: #d9dce3;
+  --paper: #fbfbfc;
+  --panel: #ffffff;
+  --accent: #1f4fd8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8eaee; --ink-soft: #9aa2b1; --rule: #2c313a;
+    --paper: #101216; --panel: #171a20; --accent: #7ea2ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
+h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 .4rem; }
+.role { color: var(--ink-soft); margin: 0; }
+h2 {
+  font-size: .82rem; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--ink-soft); margin: 3rem 0 1rem; font-weight: 600;
+}
+p { margin: 0 0 1rem; max-width: 38rem; }
+ul { max-width: 38rem; padding-left: 1.15rem; margin: 0 0 1rem; }
+li { margin-bottom: .5rem; }
+a { color: var(--accent); }
+.lede { font-size: 1.06rem; }
+.item {
+  border: 1px solid var(--rule); background: var(--panel);
+  border-radius: 6px; padding: 1.1rem 1.25rem; margin-bottom: .85rem;
+}
+.item h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.item p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
+.meta { font-size: .82rem; color: var(--ink-soft); margin-top: .6rem; }
+.back { font-size: .9rem; }
+code {
+  font: .88em ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--panel); border: 1px solid var(--rule);
+  border-radius: 3px; padding: .05rem .3rem;
+}
+.dl {
+  display: inline-block; margin-top: .4rem; padding: .55rem 1.1rem;
+  border: 1px solid var(--accent); border-radius: 5px;
+  color: var(--accent); text-decoration: none; font-size: .95rem;
+}
+.dl:hover { background: var(--accent); color: var(--paper); }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  color: var(--ink-soft); font-size: .86rem;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Offprint &mdash; Support</h1>
+  <p class="role">One person answers this. Usually within a day.</p>
+</header>
+
+<p class="lede">
+  Email <a href="mailto:marcusvanesveld@gmail.com">marcusvanesveld@gmail.com</a> and say what
+  happened. There is no ticket system and no bot.
+</p>
+<p>
+  It helps enormously if you include your Chrome version, the page you were capturing, and what
+  you expected instead.
+</p>
+
+<h2>Before you write</h2>
+
+<div class="item">
+  <h3>A capture came out empty or wrong</h3>
+  <p>
+    Try a different mode &mdash; Readable, Full page and Selection extract very differently, and
+    some sites only behave under one of them. Sites that render late may need a moment before you
+    capture.
+  </p>
+</div>
+<div class="item">
+  <h3>The terminal command says a licence is required</h3>
+  <p>
+    Run <code>offprint activate &lt;key&gt;</code> with the key from your purchase email. One
+    licence covers two machines. The extension itself never needs a licence and never will.
+  </p>
+</div>
+<div class="item">
+  <h3>The terminal command cannot reach the browser</h3>
+  <p>
+    Run <code>offprint doctor</code>. It checks the whole chain and names the broken link. It is
+    free and works without a licence, on purpose &mdash; diagnosing a broken install should never
+    require having paid for it.
+  </p>
+</div>
+<div class="item">
+  <h3>Chrome warned about reading and changing all your data</h3>
+  <p>
+    That warning is caused by the debugger permission, which exists for one feature: a full-page
+    screenshot of the whole scroll height, which Chrome allows no other way. It is attached for
+    the moment of the capture and detached immediately after. The
+    <a href="/offprint/privacy/">privacy page</a> explains it in full.
+  </p>
+</div>
+
+<h2>Refunds</h2>
+<p>
+  If Offprint PRO does not do what you expected, email me and I will refund it. Purchases go
+  through Polar, who handle the money.
+</p>
+
+<footer>
+  <p class="back">
+    <a href="/offprint/">Offprint</a> &middot;
+    <a href="/offprint/privacy/">Privacy</a> &middot;
+    <a href="/">marcusvanesveld.com</a>
+  </p>
+</footer>
+
+</div>
+</body>
+</html>

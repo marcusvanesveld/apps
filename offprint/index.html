@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Offprint — Markdown, transcripts and screenshots out of any page</title>
+<meta name="description" content="A free Chrome extension that takes any page out as clean Markdown, a YouTube transcript, a full-page screenshot or an offline reader file. Optional paid command-line bridge.">
+<style>
+:root {
+  --ink: #16181d;
+  --ink-soft: #545a66;
+  --rule: #d9dce3;
+  --paper: #fbfbfc;
+  --panel: #ffffff;
+  --accent: #1f4fd8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8eaee; --ink-soft: #9aa2b1; --rule: #2c313a;
+    --paper: #101216; --panel: #171a20; --accent: #7ea2ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
+h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 .4rem; }
+.role { color: var(--ink-soft); margin: 0; }
+h2 {
+  font-size: .82rem; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--ink-soft); margin: 3rem 0 1rem; font-weight: 600;
+}
+p { margin: 0 0 1rem; max-width: 38rem; }
+ul { max-width: 38rem; padding-left: 1.15rem; margin: 0 0 1rem; }
+li { margin-bottom: .5rem; }
+a { color: var(--accent); }
+.lede { font-size: 1.06rem; }
+.item {
+  border: 1px solid var(--rule); background: var(--panel);
+  border-radius: 6px; padding: 1.1rem 1.25rem; margin-bottom: .85rem;
+}
+.item h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.item p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
+.meta { font-size: .82rem; color: var(--ink-soft); margin-top: .6rem; }
+.back { font-size: .9rem; }
+code {
+  font: .88em ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--panel); border: 1px solid var(--rule);
+  border-radius: 3px; padding: .05rem .3rem;
+}
+.dl {
+  display: inline-block; margin-top: .4rem; padding: .55rem 1.1rem;
+  border: 1px solid var(--accent); border-radius: 5px;
+  color: var(--accent); text-decoration: none; font-size: .95rem;
+}
+.dl:hover { background: var(--accent); color: var(--paper); }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  color: var(--ink-soft); font-size: .86rem;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Offprint</h1>
+  <p class="role">A Chrome extension &middot; free</p>
+</header>
+
+<p class="lede">
+  Offprint takes a page out of the browser in whatever form you actually need: clean Markdown, a
+  YouTube transcript, a full-page screenshot, or a single offline HTML file with the images baked
+  in.
+</p>
+<p>
+  It is built for people who feed pages to AI agents, so the clipboard is a first-class
+  destination and every capture carries a token estimate.
+</p>
+
+<h2>What it does</h2>
+<div class="item">
+  <h3>Capture</h3>
+  <p>
+    Readable article extraction, full page, or just your selection. YouTube transcripts,
+    timestamped, human captions preferred over automatic ones. Full-page screenshots in one shot,
+    including everything below the fold. Offline reader HTML: one file, images inlined, opens
+    anywhere, forever.
+  </p>
+</div>
+<div class="item">
+  <h3>Then</h3>
+  <p>
+    Copy to the clipboard or save to a folder &mdash; click saves, shift-click copies. Edit the
+    Markdown before you take it. Save every highlighted tab at once. Clip history, so the page you
+    took an hour ago is still there. Per-site rules, so a site remembers how you like it.
+  </p>
+</div>
+<div class="item">
+  <h3>On-device AI, strictly optional</h3>
+  <p>
+    Summaries use Chrome's built-in model. Nothing is sent anywhere, there are no API keys, and
+    the model only loads if you ask for a summary.
+  </p>
+</div>
+
+<h2>Offprint PRO</h2>
+<p>
+  The extension is free and stays free. The optional <code>offprint</code> command-line bridge
+  &mdash; which drives the live extension from a terminal or an AI agent, without touching the
+  browser UI or stealing focus &mdash; is unlocked by a one-time licence.
+</p>
+<p>
+  <strong>EUR 15, one time.</strong> No subscription, no account. One licence activates two
+  machines, once each, and then works offline forever.
+</p>
+<p>
+  <a class="dl" href="https://buy.polar.sh/polar_cl_G2rbGOSChX1bEiPB1aWXsgG7Y4jhPc9cZo4I32K6DHL">Buy a licence</a>
+</p>
+<p class="meta">
+  After buying, run <code>offprint activate &lt;key&gt;</code> once. Payment and VAT are handled by
+  Polar, who act as the seller of record.
+</p>
+
+<h2>Privacy, in one line</h2>
+<p>
+  No account, no telemetry, no analytics, and no server of mine &mdash; I never receive anything
+  you capture. Three sites are asked directly for things a page does not contain; they are named
+  on the <a href="/offprint/privacy/">privacy page</a>.
+</p>
+
+<footer>
+  <p class="back">
+    <a href="/offprint/support/">Support</a> &middot;
+    <a href="/offprint/privacy/">Privacy</a> &middot;
+    <a href="/">marcusvanesveld.com</a>
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
