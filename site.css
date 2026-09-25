@@ -55,7 +55,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-
 }
 .item h3 { margin: 0 0 .3rem; font-size: 1rem; }
 .item p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
-.meta { font-size: .84rem; color: var(--ink-soft); margin-top: .6rem; }
+.meta, .item .meta { font-size: .84rem; color: var(--ink-soft); margin-top: .6rem; }
 .back { font-size: .9rem; }
 
 code {
@@ -100,7 +100,10 @@ footer p { margin: 0 0 .4rem; }
 @media (max-width: 36rem) {
   .shots { flex-direction: column; }
   .shot-mac, .shot-phone { flex: none; width: 100%; }
-  .shot-phone { max-width: 15rem; margin: 0 auto; }
+  .shot-phone { max-width: 12rem; margin: 0 auto; }
+}
+@media (min-width: 64rem) {
+  .shots { margin-left: -6rem; margin-right: -6rem; }
 }
 .way h3 { font-size: 1.05rem; }
 .project { display: flex; gap: 1.1rem; align-items: center; text-decoration: none; color: inherit; }
