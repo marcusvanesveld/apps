@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Preinvent — find what already exists before you build it</title>
-<meta name="description" content="Preinvent searches your own repos, your GitHub stars and eleven public registries in one query, and tells you what to build on instead of building it again. Mac app and command line.">
+<meta name="description" content="Preinvent searches your own repos, your GitHub stars and public registries in one query, and tells you what to build on instead of building it again. Mac app, iPhone app and command line.">
 <style>
 :root {
   --ink: #16181d;
@@ -60,6 +60,15 @@ code {
   color: var(--accent); text-decoration: none; font-size: .95rem;
 }
 .dl:hover { background: var(--accent); color: var(--paper); }
+.get { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0 0 2.5rem; }
+.get a {
+  flex: 1 1 15rem; display: block; padding: 1rem 1.25rem; border-radius: 8px;
+  background: var(--accent); color: var(--paper); text-decoration: none;
+}
+.get a:hover { opacity: .9; }
+.get strong { display: block; font-size: 1.05rem; }
+.get span { font-size: .85rem; opacity: .85; }
+.get-note { font-size: .86rem; color: var(--ink-soft); margin: -1.75rem 0 2.5rem; }
 footer {
   margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
   color: var(--ink-soft); font-size: .86rem;
@@ -74,6 +83,18 @@ footer {
   <p class="role">A Mac app, an iPhone app and a command line &middot; free</p>
 </header>
 
+<div class="get">
+  <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-0.1.0.dmg">
+    <strong>Download Preinvent</strong>
+    <span>Mac app 0.1.0 &middot; DMG, 24 MB</span>
+  </a>
+  <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-INFO-0.1.0.dmg">
+    <strong>Download Preinvent for INFO</strong>
+    <span>Mac app 0.1.0 &middot; DMG, 23 MB</span>
+  </a>
+</div>
+<p class="get-note">Signed and notarised by Apple. macOS 26 or later, Apple silicon. Open the DMG and drag the app to Applications. iPhone and command line: <a href="#install">Install</a>.</p>
+
 <p class="lede">
   Preinvent answers one question before you write code: did someone, you or the world, already
   build this?
@@ -87,7 +108,7 @@ footer {
   instead of dropped. No account, no API keys, no server of mine, no AI model calls.
 </p>
 
-<h2>Install</h2>
+<h2 id="install">Install</h2>
 <div class="item">
   <h3>Mac app</h3>
   <p>
