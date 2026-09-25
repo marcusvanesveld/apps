@@ -86,7 +86,8 @@ footer {
     gitlab.com, registry.npmjs.org, pypi.org, crates.io, pkg.go.dev, search.maven.org,
     rubygems.org, azuresearch-usnc.nuget.org, hub.docker.com, marketplace.visualstudio.com,
     hn.algolia.com, skills.sh, artifacthub.io, registry.platformio.org and
-    components.espressif.com. With <code>--local</code>, a search sends nothing.</li>
+    components.espressif.com. With <code>--local</code>, a search sends nothing, except the one-time model download below if it has
+    not happened yet.</li>
   <li><strong>Your GitHub token</strong>, only if you are logged in to the <code>gh</code> command
     line or set <code>GITHUB_TOKEN</code>. It goes only to GitHub, to raise GitHub's rate limit.</li>
   <li><strong>One model download</strong> on first use, from huggingface.co: a text-embedding model
@@ -106,7 +107,8 @@ footer {
 <h2>Nederlands</h2>
 <p>
   Preinvent verzamelt niets. Je zoekwoorden gaan alleen naar de openbare registers die in elke
-  uitkomst staan, en met <code>--local</code> gaat er niets weg. Je bibliotheek en geschiedenis
+  uitkomst staan, en met <code>--local</code> gaat er niets weg, behalve de eenmalige download van het model als die nog niet
+  gedaan is. Je bibliotheek en geschiedenis
   blijven op je eigen apparaat.
 </p>
 
