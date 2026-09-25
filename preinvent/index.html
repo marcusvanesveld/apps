@@ -71,7 +71,7 @@ footer {
 
 <header>
   <h1>Preinvent</h1>
-  <p class="role">A Mac app and a command line &middot; free</p>
+  <p class="role">A Mac app, an iPhone app and a command line &middot; free</p>
 </header>
 
 <p class="lede">
@@ -79,9 +79,12 @@ footer {
   build this?
 </p>
 <p>
-  One query searches your own repo folders, your GitHub stars, your installed tools and eleven
-  public registries, and returns one ranked list with the source of every row. No account, no API
-  keys, no server of mine.
+  One query searches your own repo folders, your GitHub stars, your installed tools and sixteen
+  public sources, from GitHub, GitLab and npm to Artifact Hub and the ESP Component Registry. It
+  returns one ranked list with the source of every row, plus license and upkeep where the
+  registry reports them. Describe a whole
+  system and <code>pre tetris</code> gives a ranked bench for each part, near misses labelled
+  instead of dropped. No account, no API keys, no server of mine, no AI model calls.
 </p>
 
 <h2>Install</h2>
@@ -89,7 +92,7 @@ footer {
   <h3>Mac app</h3>
   <p>
     Preinvent.app, signed and notarised. It already contains the <code>pre</code> command line.
-    Open the disk image and drag Preinvent to Applications. macOS 26 or later.
+    Open the disk image and drag Preinvent to Applications. macOS 26 or later, Apple silicon.
   </p>
   <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-0.1.0.dmg">Download Preinvent 0.1.0 (DMG)</a>
 </div>
@@ -107,14 +110,50 @@ footer {
   </p>
 </div>
 <div class="item">
-  <h3>Mac app and iOS app</h3>
+  <h3>iPhone app</h3>
   <p>
-    The iOS app is a separate install and does not need the Mac. It is not available yet.
+    The whole search engine runs inside the app, so it needs no Mac and no server. It is on its
+    way through TestFlight; the invite link appears here once Apple has reviewed the beta.
+  </p>
+</div>
+
+<h2 id="info">Preinvent for INFO</h2>
+<p>
+  Voor collega&rsquo;s van INFO is er een eigen editie. Het is dezelfde zoekmachine, zonder de
+  video- en YouTube-functies. De bibliotheek begint leeg, dus je eigen sterren en mappen zijn van
+  jou. Elke rij toont waar hij vandaan komt, en rijen uit GitHub, npm en crates.io ook licentie en onderhoud. Een bench exporteer je direct als
+  Research spec of als ADR in MADR-formaat.
+</p>
+<div class="item">
+  <h3>Mac-app</h3>
+  <p>
+    Preinvent for INFO.app, ondertekend en genotariseerd door Apple. Open het schijfbestand en
+    sleep de app naar Programma&rsquo;s. Vereist macOS 26 of nieuwer op Apple silicon.
+  </p>
+  <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-INFO-0.1.0.dmg">Download Preinvent for INFO 0.1.0 (DMG)</a>
+</div>
+<div class="item">
+  <h3>Command line voor je agent</h3>
+  <p>
+    <code>pre</code> met de skill voor Claude Code. Pak het archief uit en start de installer. Die
+    zet <code>pre</code> in <code>~/.local/bin</code> en schrijft de skill naar
+    <code>~/.claude/skills/preinvent/</code>.
+  </p>
+  <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/precli-info-0.1.0-arm64-apple-darwin.tar.gz">Download pre for INFO 0.1.0</a>
+  <p class="meta">
+    <code>tar -xzf precli-info-0.1.0-arm64-apple-darwin.tar.gz &amp;&amp; ./install_cli.sh</code>
+  </p>
+</div>
+<div class="item">
+  <h3>iPhone-app</h3>
+  <p>
+    Volgt via TestFlight. De uitnodigingslink staat hier zodra Apple de beta heeft goedgekeurd.
   </p>
 </div>
 
 <p class="meta">
-  Checksums for every file: <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/SHA256SUMS">SHA256SUMS</a>.
+  Checksums: <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/SHA256SUMS">SHA256SUMS</a> (Preinvent) and
+  <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/SHA256SUMS-info">SHA256SUMS-info</a> (Preinvent for INFO).
 </p>
 
 <footer>
