@@ -94,7 +94,7 @@ footer p { margin: 0 0 .4rem; }
 .shots { display: flex; gap: 1.25rem; align-items: flex-start; margin: 2.5rem 0 1rem; }
 .shots figure { margin: 0; min-width: 0; }
 .shot-mac { flex: 1.418 1 0; }
-.shot-phone { flex: .462 1 0; }
+.shot-phone { flex: .460 1 0; }
 .shots img { border: 1px solid var(--rule); border-radius: 10px; }
 .shot-phone img { border-radius: 14px; }
 @media (max-width: 36rem) {
