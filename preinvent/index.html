@@ -3,145 +3,100 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Preinvent — find what already exists before you build it</title>
+<title>Preinvent: find what already exists before you build it</title>
 <meta name="description" content="Preinvent searches your own repos, your GitHub stars and public registries in one query, and tells you what to build on instead of building it again. Mac app, iPhone app and command line.">
-<style>
-:root {
-  --ink: #16181d;
-  --ink-soft: #545a66;
-  --rule: #d9dce3;
-  --paper: #fbfbfc;
-  --panel: #ffffff;
-  --accent: #1f4fd8;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #e8eaee; --ink-soft: #9aa2b1; --rule: #2c313a;
-    --paper: #101216; --panel: #171a20; --accent: #7ea2ff;
-  }
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-.wrap { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
-header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
-h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 .4rem; }
-.role { color: var(--ink-soft); margin: 0; }
-h2 {
-  font-size: .82rem; text-transform: uppercase; letter-spacing: .09em;
-  color: var(--ink-soft); margin: 3rem 0 1rem; font-weight: 600;
-}
-p { margin: 0 0 1rem; max-width: 38rem; }
-ul { max-width: 38rem; padding-left: 1.15rem; margin: 0 0 1rem; }
-li { margin-bottom: .5rem; }
-a { color: var(--accent); }
-.lede { font-size: 1.06rem; }
-.item {
-  border: 1px solid var(--rule); background: var(--panel);
-  border-radius: 6px; padding: 1.1rem 1.25rem; margin-bottom: .85rem;
-}
-.item h3 { margin: 0 0 .3rem; font-size: 1rem; }
-.item p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
-.meta { font-size: .82rem; color: var(--ink-soft); margin-top: .6rem; }
-.back { font-size: .9rem; }
-code {
-  font: .88em ui-monospace, SFMono-Regular, Menlo, monospace;
-  background: var(--panel); border: 1px solid var(--rule);
-  border-radius: 3px; padding: .05rem .3rem;
-}
-.dl {
-  display: inline-block; margin-top: .4rem; padding: .55rem 1.1rem;
-  border: 1px solid var(--accent); border-radius: 5px;
-  color: var(--accent); text-decoration: none; font-size: .95rem;
-}
-.dl:hover { background: var(--accent); color: var(--paper); }
-.get { display: flex; flex-wrap: wrap; gap: .75rem; margin: 0 0 2.5rem; }
-.get a {
-  flex: 0 1 22rem; display: block; padding: 1rem 1.25rem; border-radius: 8px;
-  background: var(--accent); color: var(--paper); text-decoration: none;
-}
-.get a:hover { opacity: .9; }
-.get strong { display: block; font-size: 1.05rem; }
-.get span { font-size: .85rem; opacity: .85; }
-.get-note { font-size: .86rem; color: var(--ink-soft); margin: -1.75rem 0 2.5rem; }
-footer {
-  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
-  color: var(--ink-soft); font-size: .86rem;
-}
-</style>
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <div class="wrap">
 
+<nav class="site">
+  <a class="home" href="/">Marcus van Esveld</a>
+  <ul>
+    <li><a href="/preinvent/" aria-current="page">Preinvent</a></li>
+    <li><a href="/offprint/">Offprint</a></li>
+  </ul>
+</nav>
+
 <header>
   <h1>Preinvent</h1>
-  <p class="role">A Mac app, an iPhone app and a command line &middot; free</p>
+  <p class="role">Find what already exists before you build it.</p>
 </header>
 
-<div class="get">
-  <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-0.1.0.dmg">
-    <strong>Download Preinvent</strong>
-    <span>Mac app 0.1.0 &middot; DMG, 24 MB</span>
-  </a>
-</div>
-<p class="get-note">Signed and notarised by Apple. macOS 26 or later, Apple silicon. Open the DMG and drag the app to Applications. iPhone and command line: <a href="#install">Install</a>.</p>
-
 <p class="lede">
-  Preinvent answers one question before you write code: did someone, you or the world, already
-  build this?
-</p>
-<p>
-  One query searches your own repo folders, your GitHub stars, your installed tools and public
-  sources, from GitHub, GitLab and npm to Artifact Hub and the ESP Component Registry. It
-  returns one ranked list with the source of every row, plus license and upkeep where the
-  registry reports them. Describe a whole
-  system and <code>pre tetris</code> gives a ranked bench for each part, near misses labelled
-  instead of dropped. No account, no API keys, no server of mine, no chat model and no cloud AI.
+  Describe what you want to build, in plain words. Preinvent searches your own repos, your GitHub
+  stars and the public registries, and returns one ranked list of what is already out there.
 </p>
 
-<h2 id="install">Install</h2>
-<div class="item">
-  <h3>Mac app</h3>
-  <p>
-    Preinvent.app, signed and notarised. It already contains the <code>pre</code> command line.
-    Open the disk image and drag Preinvent to Applications. macOS 26 or later, Apple silicon.
-  </p>
-  <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-0.1.0.dmg">Download Preinvent 0.1.0 (DMG)</a>
+<a class="button" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-0.1.0.dmg">Download for Mac</a>
+<p class="meta">Free. Version 0.1.0, 24 MB. macOS 26 or later, Apple silicon. Signed and notarised by Apple.</p>
+
+<div class="shots">
+  <figure class="shot-mac">
+    <img src="img/preinvent-mac.webp" width="1598" height="1127" loading="lazy" decoding="async"
+         alt="The Preinvent Mac app after a search for markdown editor: a ranked table of GitHub projects with match score, author and language.">
+    <figcaption>Mac: one search, one ranked table.</figcaption>
+  </figure>
+  <figure class="shot-phone">
+    <img src="img/preinvent-iphone.webp" width="600" height="1298" loading="lazy" decoding="async"
+         alt="The Preinvent iPhone app after a search for terminal file manager: a list of GitHub projects with stars, language and match score.">
+    <figcaption>iPhone: the same engine, on the phone.</figcaption>
+  </figure>
 </div>
-<div class="item">
-  <h3>Command line, with the agent skill</h3>
+
+<h2 id="install">Three ways to get it</h2>
+
+<div class="item way">
+  <h3>Mac app</h3>
+  <p>The full app. The <code>pre</code> command line is inside it.</p>
+  <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-0.1.0.dmg">Download the DMG</a>
+  <p class="meta">Open the DMG and drag Preinvent to Applications.</p>
+</div>
+
+<div class="item way">
+  <h3>iPhone app</h3>
+  <p>The whole search engine runs on the phone. No Mac and no server needed.</p>
+  <a class="dl" href="https://testflight.apple.com/join/TgQfS6yW">Join the TestFlight beta</a>
+  <p class="meta">The link opens once Apple has reviewed the first beta.</p>
+</div>
+
+<div class="item way">
+  <h3>Command line</h3>
   <p>
-    <code>pre</code> plus the skill that tells a coding agent when and how to use it. Unpack the
-    archive and run the installer. It puts <code>pre</code> in <code>~/.local/bin</code> and writes
-    the skill to <code>~/.claude/skills/preinvent/</code>. Already have the app? Run
+    <code>pre</code> for the terminal, plus a skill that tells a coding agent when and how to use
+    it. The installer puts <code>pre</code> in <code>~/.local/bin</code> and the skill in
+    <code>~/.claude/skills/preinvent/</code>.
+  </p>
+  <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/precli-0.1.0-arm64-apple-darwin.tar.gz">Download pre (Apple silicon)</a>
+  <pre><code>tar -xzf precli-0.1.0-arm64-apple-darwin.tar.gz
+./install_cli.sh</code></pre>
+  <p class="meta">
+    Already have the Mac app? Run
     <code>install_cli.sh /Applications/Preinvent.app/Contents/Resources/pre</code> instead.
   </p>
-  <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/precli-0.1.0-arm64-apple-darwin.tar.gz">Download pre 0.1.0 (Apple silicon)</a>
-  <p class="meta">
-    <code>tar -xzf precli-0.1.0-arm64-apple-darwin.tar.gz &amp;&amp; ./install_cli.sh</code>
-  </p>
-</div>
-<div class="item">
-  <h3>iPhone app</h3>
-  <p>
-    The whole search engine runs inside the app, so it needs no Mac and no server. Install it
-    through TestFlight. The link opens once Apple has reviewed the first beta.
-  </p>
-  <a class="dl" href="https://testflight.apple.com/join/TgQfS6yW">Join the Preinvent beta (TestFlight)</a>
 </div>
 
-<p class="meta">
-  Checksums: <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/SHA256SUMS">SHA256SUMS</a>.
+<h2>What it does</h2>
+<ul>
+  <li>One query searches your repo folders, your GitHub stars, your installed tools and public
+    sources, from GitHub, GitLab and npm to Artifact Hub and the ESP Component Registry.</li>
+  <li>You get one ranked list. Every row names its source, with license and upkeep where the
+    registry reports them.</li>
+  <li>Planning a whole system? List its parts in one file, and <code>pre tetris</code> returns a
+    shortlist of existing projects for each part. Near misses are labelled, not dropped.</li>
+</ul>
+
+<h2>Privacy</h2>
+<p>
+  No account, no API keys, no server of mine, no chat model and no cloud AI. Ranking runs on your
+  device. The <a href="/preinvent/privacy.html">privacy page</a> lists every host a search can reach.
 </p>
 
 <footer>
-  <p class="back">
-    <a href="/">marcusvanesveld.com</a> &middot; <a href="/preinvent/privacy.html">Privacy</a>
+  <p>
+    <a href="/preinvent/privacy.html">Privacy</a> &middot;
+    <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/SHA256SUMS">Checksums</a> &middot;
+    <a href="/">marcusvanesveld.com</a>
   </p>
 </footer>
 
