@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preinvent — find what already exists before you build it</title>
+<meta name="description" content="Preinvent searches your own repos, your GitHub stars and eleven public registries in one query, and tells you what to build on instead of building it again. Mac app and command line.">
+<style>
+:root {
+  --ink: #16181d;
+  --ink-soft: #545a66;
+  --rule: #d9dce3;
+  --paper: #fbfbfc;
+  --panel: #ffffff;
+  --accent: #1f4fd8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e8eaee; --ink-soft: #9aa2b1; --rule: #2c313a;
+    --paper: #101216; --panel: #171a20; --accent: #7ea2ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
+header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
+h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 .4rem; }
+.role { color: var(--ink-soft); margin: 0; }
+h2 {
+  font-size: .82rem; text-transform: uppercase; letter-spacing: .09em;
+  color: var(--ink-soft); margin: 3rem 0 1rem; font-weight: 600;
+}
+p { margin: 0 0 1rem; max-width: 38rem; }
+ul { max-width: 38rem; padding-left: 1.15rem; margin: 0 0 1rem; }
+li { margin-bottom: .5rem; }
+a { color: var(--accent); }
+.lede { font-size: 1.06rem; }
+.item {
+  border: 1px solid var(--rule); background: var(--panel);
+  border-radius: 6px; padding: 1.1rem 1.25rem; margin-bottom: .85rem;
+}
+.item h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.item p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
+.meta { font-size: .82rem; color: var(--ink-soft); margin-top: .6rem; }
+.back { font-size: .9rem; }
+code {
+  font: .88em ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: var(--panel); border: 1px solid var(--rule);
+  border-radius: 3px; padding: .05rem .3rem;
+}
+.dl {
+  display: inline-block; margin-top: .4rem; padding: .55rem 1.1rem;
+  border: 1px solid var(--accent); border-radius: 5px;
+  color: var(--accent); text-decoration: none; font-size: .95rem;
+}
+.dl:hover { background: var(--accent); color: var(--paper); }
+footer {
+  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  color: var(--ink-soft); font-size: .86rem;
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Preinvent</h1>
+  <p class="role">A Mac app and a command line &middot; free</p>
+</header>
+
+<p class="lede">
+  Preinvent answers one question before you write code: did someone, you or the world, already
+  build this?
+</p>
+<p>
+  One query searches your own repo folders, your GitHub stars, your installed tools and eleven
+  public registries, and returns one ranked list with the source of every row. No account, no API
+  keys, no server of mine.
+</p>
+
+<h2>Install</h2>
+<div class="item">
+  <h3>Mac app</h3>
+  <p>
+    Preinvent.app, signed and notarised. It already contains the <code>pre</code> command line.
+    Open the disk image and drag Preinvent to Applications. macOS 26 or later.
+  </p>
+  <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/Preinvent-0.1.0.dmg">Download Preinvent 0.1.0 (DMG)</a>
+</div>
+<div class="item">
+  <h3>Command line, with the agent skill</h3>
+  <p>
+    <code>pre</code> plus the skill that tells a coding agent when and how to use it. Unpack the
+    archive and run the installer. It puts <code>pre</code> in <code>~/.local/bin</code> and writes
+    the skill to <code>~/.claude/skills/preinvent/</code>. Already have the app? Run
+    <code>install_cli.sh /Applications/Preinvent.app/Contents/Resources/pre</code> instead.
+  </p>
+  <a class="dl" href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/precli-0.1.0-arm64-apple-darwin.tar.gz">Download pre 0.1.0 (Apple silicon)</a>
+  <p class="meta">
+    <code>tar -xzf precli-0.1.0-arm64-apple-darwin.tar.gz &amp;&amp; ./install_cli.sh</code>
+  </p>
+</div>
+<div class="item">
+  <h3>Mac app and iOS app</h3>
+  <p>
+    The iOS app is a separate install and does not need the Mac. It is not available yet.
+  </p>
+</div>
+
+<p class="meta">
+  Checksums for every file: <a href="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.0/SHA256SUMS">SHA256SUMS</a>.
+</p>
+
+<footer>
+  <p class="back">
+    <a href="/">marcusvanesveld.com</a>
+  </p>
+</footer>
+
+</div>
+</body>
+</html>
