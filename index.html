@@ -4,92 +4,55 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marcus van Esveld</title>
-<meta name="description" content="Independent software builder. Native Mac and iOS tools, built properly and sold cheap.">
-<style>
-:root {
-  --ink: #16181d;
-  --ink-soft: #545a66;
-  --rule: #d9dce3;
-  --paper: #fbfbfc;
-  --panel: #ffffff;
-  --accent: #1f4fd8;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ink: #e8eaee; --ink-soft: #9aa2b1; --rule: #2c313a;
-    --paper: #101216; --panel: #171a20; --accent: #7ea2ff;
-  }
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  background: var(--paper);
-  color: var(--ink);
-  font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
-.wrap { max-width: 46rem; margin: 0 auto; padding: 4.5rem 1.5rem 6rem; }
-header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
-h1 { font-size: 1.9rem; letter-spacing: -0.02em; margin: 0 0 .4rem; }
-.role { color: var(--ink-soft); margin: 0; }
-h2 {
-  font-size: .82rem; text-transform: uppercase; letter-spacing: .09em;
-  color: var(--ink-soft); margin: 3rem 0 1rem; font-weight: 600;
-}
-p { margin: 0 0 1rem; max-width: 38rem; }
-a { color: var(--accent); }
-.lede { font-size: 1.06rem; }
-.item {
-  border: 1px solid var(--rule); background: var(--panel);
-  border-radius: 6px; padding: 1.1rem 1.25rem; margin-bottom: .85rem;
-}
-.item h3 { margin: 0 0 .3rem; font-size: 1rem; }
-.item p { margin: 0; color: var(--ink-soft); font-size: .94rem; }
-.meta { font-size: .82rem; color: var(--ink-soft); margin-top: .6rem; }
-.dl {
-  display: inline-block; margin-top: .8rem; padding: .45rem .9rem;
-  border: 1px solid var(--accent); border-radius: 5px;
-  color: var(--accent); text-decoration: none; font-size: .9rem; font-weight: 500;
-}
-footer {
-  margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
-  color: var(--ink-soft); font-size: .86rem;
-}
-</style>
+<meta name="description" content="Marcus van Esveld, engineer. Embedded firmware, hardware and software architecture, and native Mac and iOS tools.">
+<link rel="stylesheet" href="/site.css">
 </head>
 <body>
 <div class="wrap">
 
+<nav class="site">
+  <a class="home" href="/">Marcus van Esveld</a>
+  <ul>
+    <li><a href="/preinvent/">Preinvent</a></li>
+    <li><a href="/offprint/">Offprint</a></li>
+  </ul>
+</nav>
+
 <header>
   <h1>Marcus van Esveld</h1>
-  <p class="role">Independent software builder &middot; Netherlands</p>
+  <p class="role">Engineer &middot; Netherlands</p>
 </header>
 
 <p class="lede">
-  I build native Mac and iOS tools. Small, specific things that do one job properly, rather than
-  platforms that do everything adequately.
+  I work on embedded firmware, on hardware and software architecture, and on native Mac and iOS
+  tools.
 </p>
 <p>
-  Most of what I make starts because I needed it and nothing that existed was good enough. Some of
-  it turns out to be useful to other people, and that is what lives here.
+  Most of what I make starts because I needed it and nothing that existed was good enough. The
+  tools below turned out to be useful to other people too.
 </p>
 
 <h2>Projects</h2>
-<div class="item">
-  <h3><a href="/preinvent/">Preinvent</a></h3>
-  <p>Find what already exists before you build it. One query across your own repos, your GitHub
-     stars and public registries from GitHub to npm. A Mac app, an iPhone app and a command line.</p>
-</div>
+<a class="item project" href="/preinvent/">
+  <img src="/preinvent/img/preinvent-mac.webp" width="1598" height="1127" loading="lazy" decoding="async" alt="">
+  <div>
+    <h3>Preinvent</h3>
+    <p>Find what already exists before you build it. One query across your own repos, your GitHub
+       stars and public registries from GitHub to npm.</p>
+    <p class="meta">Mac app, iPhone app and command line. Free.</p>
+  </div>
+</a>
+<a class="item project" href="/offprint/">
+  <div>
+    <h3>Offprint</h3>
+    <p>Take any web page out of Chrome as clean Markdown, a YouTube transcript, a full-page
+       screenshot or one offline HTML file.</p>
+    <p class="meta">Chrome extension. Free.</p>
+  </div>
+</a>
 
-<h2>Working together</h2>
-<p>
-  I take on a small number of projects where the problem is interesting and the scope is honest —
-  native Mac and iOS work, tools for people who already know what they need, and the awkward
-  engineering nobody else wants to own.
-</p>
-<p>
-  <a href="mailto:marcusvanesveld@gmail.com">marcusvanesveld@gmail.com</a>
-</p>
+<h2>Contact</h2>
+<p><a href="mailto:marcusvanesveld@gmail.com">marcusvanesveld@gmail.com</a></p>
 
 <footer>
   Built in the Netherlands. No trackers, no analytics, no cookies on this page.
