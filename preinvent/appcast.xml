@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+  <channel>
+    <title>Preinvent</title>
+    <item>
+      <title>0.1.4</title>
+      <pubDate>Wed, 30 Sep 2026 04:22:39 GMT</pubDate>
+      <sparkle:version>0.1.4</sparkle:version>
+      <sparkle:shortVersionString>0.1.4</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.4/Preinvent-0.1.4.dmg" length="24995484" type="application/octet-stream" sparkle:edSignature="KWTPtgmLpuK+QXeco4s/xMnsXy0MQ4pkYB4mrU/pXwUc4WSXxOb/IJpWD9qWnrCFlVez3C6YmyHBzMEF6JHvAg==" />
+    </item>
+  </channel>
+</rss><!-- sparkle-signatures:
+edSignature: UWgXvYmjHkQ2FrvMnWdzo5kUPQevPs3rRDVh8SE7o3sxU+V0wz8W/BKLtpdruHF0W5PbZiYGu8TbOTtTXAlZAw==
+length: 762
+-->
