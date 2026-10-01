@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Paper tile, ink discs: the page between the four discs is the brightest
+       thing in the mark. Inverted from the first cut, which put a near-black
+       tile on a near-black toolbar — in dark mode it dissolved and the mark
+       read as four floating blobs around a hole. -->
+  <rect width="128" height="128" rx="28" fill="#fafaf8"/>
+  <g fill="#16181d">
+    <circle cx="40" cy="40" r="23"/>
+    <circle cx="88" cy="40" r="23"/>
+    <circle cx="40" cy="88" r="23"/>
+    <circle cx="88" cy="88" r="23"/>
+  </g>
+  <rect x="40" y="40" width="48" height="48" fill="#fafaf8"/>
+</svg>

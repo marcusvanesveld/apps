@@ -3,61 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
 <title>Marcus van Esveld</title>
-<meta name="description" content="Marcus van Esveld, engineer. Embedded firmware, hardware and software architecture, and native Mac and iOS tools.">
+<meta name="description" content="Marcus van Esveld, engineer. Firmware, native Mac and iOS apps, and tools for coding agents.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/site.css">
 </head>
 <body>
-<div class="wrap">
-
-<nav class="site">
-  <a class="home" href="/">Marcus van Esveld</a>
-  <ul>
-    <li><a href="/preinvent/">Preinvent</a></li>
-    <li><a href="/offprint/">Offprint</a></li>
-  </ul>
-</nav>
-
-<header>
-  <h1>Marcus van Esveld</h1>
-  <p class="role">Engineer &middot; Netherlands</p>
-</header>
-
-<p class="lede">
-  I work on embedded firmware, on hardware and software architecture, and on native Mac and iOS
-  tools.
-</p>
-<p>
-  Most of what I make starts because I needed it and nothing that existed was good enough. The
-  tools below turned out to be useful to other people too.
-</p>
-
-<h2>Projects</h2>
-<a class="item project" href="/preinvent/">
-  <img src="/preinvent/img/preinvent-mac.webp" width="1900" height="951" loading="lazy" decoding="async" alt="">
-  <div>
-    <h3>Preinvent</h3>
-    <p>Find what already exists before you build it. One query across your own repos, your GitHub
-       stars and public registries from GitHub to npm.</p>
-    <p class="meta">Mac app, iPhone app, CLI + skill. Free.</p>
+<main class="page">
+  <nav class="nav" aria-label="Site">
+    <a class="home" href="/">Marcus van Esveld</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Working together</a>
+    <a href="mailto:marcusvanesveld@gmail.com">Email</a>
+  </nav>
+  <div class="cols">
+    <p><span class="discipline">Firmware</span><b>Below the operating system.</b> Boards, buses and the code that runs on them.</p>
+    <p><span class="discipline">Native interfaces</span><b>Where people touch it.</b> Native Mac and iOS apps that do one job properly and look like they belong there.</p>
+    <p><span class="discipline">Agentic engineering</span><b>Tools for agents.</b> Command lines and skills that let a coding agent find, fetch and act without a human in the loop.</p>
   </div>
-</a>
-<a class="item project" href="/offprint/">
-  <div>
-    <h3>Offprint</h3>
-    <p>Take any web page out of Chrome as clean Markdown, a YouTube transcript, a full-page
-       screenshot or one offline HTML file.</p>
-    <p class="meta">Chrome extension. Free.</p>
-  </div>
-</a>
-
-<h2>Contact</h2>
-<p><a href="mailto:marcusvanesveld@gmail.com">marcusvanesveld@gmail.com</a></p>
-
-<footer>
-  Built in the Netherlands. No trackers, no analytics, no cookies on this page.
-</footer>
-
-</div>
+  <div class="label" id="projects"><span>Projects</span></div>
+  <section class="bento" aria-label="Projects">
+    <a class="tile app lead" href="/preinvent/">
+      <img class="icon s112" src="/img/preinvent-icon.png" width="112" height="112" alt=""><span class="go" aria-hidden="true">Open &rarr;</span>
+      <div>
+        <h2>Preinvent</h2><span class="meta">Mac app, iPhone app, command line, agent skill</span>
+        <span class="tag">Don't reinvent the wheel.</span>
+        <p class="line">Did someone already build this? One query across your own repos, your GitHub stars and the public registries, so you build on what exists.</p>
+        <span class="meta">v0.1.8, free</span>
+      </div>
+    </a>
+    <a class="tile app second" href="/offprint/">
+      <img class="icon s112" src="/img/offprint-icon.svg" width="112" height="112" alt=""><span class="go" aria-hidden="true">Open &rarr;</span>
+      <div>
+        <h2>Offprint</h2><span class="meta">Chrome extension</span>
+        <span class="tag">Any page, out of the browser.</span>
+        <p class="line">Clean Markdown, a YouTube transcript, a full-page screenshot or one offline HTML file. Built for feeding agents.</p>
+        <span class="meta">Free, Pro EUR 15 once</span>
+      </div>
+    </a>
+  </section>
+  <div class="label" id="contact"><span>Working together</span></div>
+  <section class="about">
+    <p>A small number of projects where the problem is interesting and the scope is honest. Native Mac and iOS work, firmware, and the awkward engineering nobody else wants to own.</p>
+    <a class="mail" href="mailto:marcusvanesveld@gmail.com">marcusvanesveld@gmail.com</a>
+  </section>
+  <footer class="foot">Built in the Netherlands. No trackers, no analytics, no cookies.</footer>
+</main>
 </body>
 </html>
