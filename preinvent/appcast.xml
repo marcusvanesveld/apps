@@ -3,6 +3,14 @@
   <channel>
     <title>Preinvent</title>
     <item>
+      <title>0.1.14</title>
+      <pubDate>Wed, 21 Oct 2026 03:38:55 GMT</pubDate>
+      <sparkle:version>0.1.14</sparkle:version>
+      <sparkle:shortVersionString>0.1.14</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/marcusvanesveld/apps/releases/download/preinvent-v0.1.14/Preinvent-0.1.14.dmg" length="29708856" type="application/octet-stream" sparkle:edSignature="bfZ9c48CHRp6p9VlhAd58IhXMht0vY4C8FDPipsE+Fn2ZUUtlj+H9Z8kkzsJqmeOPMVbcLs+gWv1yecFdkX8Ag==" />
+    </item>
+    <item>
       <title>0.1.13</title>
       <pubDate>Tue, 13 Oct 2026 08:19:26 GMT</pubDate>
       <sparkle:version>0.1.13</sparkle:version>
@@ -84,6 +92,6 @@
     </item>
   </channel>
 </rss><!-- sparkle-signatures:
-edSignature: Y0StbtiyEm98+PLlLodjHBcsIWnwfW02cD+nN4D3YaqFJ5ukeTlOpg0K7XOVbB2mz7wt7+HiTtIS4feYuxGvCQ==
-length: 5957
+edSignature: e+WgCxfaqOQXMf4mcavfSaehHX7b2AjXG4IQaS11pVl29Ry15yveRaJ2suOTeRETTakuQUsC2FYDXaD/z8RlAQ==
+length: 6537
 -->
